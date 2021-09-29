@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-09-29T08:44:44.210Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36 Edg/94.0.992.31" etag="smaBG8pdc28XVioUQEDL" version="15.3.7" type="github">
+<mxfile host="app.diagrams.net" modified="2021-09-29T08:53:52.069Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36 Edg/94.0.992.31" etag="CXh-MLr88B8KB7Ng7_5w" version="15.3.7" type="github">
   <diagram name="Page-1" id="c7558073-3199-34d8-9f00-42111426c3f3">
     <mxGraphModel dx="2248" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="826" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
@@ -353,22 +353,22 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="7XydENh4Q1GiZ4dxHjLW-111" value="C_PveScene.PveToDeck()" style="whiteSpace=wrap;align=left;verticalAlign=middle;fontStyle=1;strokeWidth=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="470" y="385" width="180" height="50" as="geometry" />
+          <mxGeometry x="493" y="385" width="180" height="50" as="geometry" />
         </mxCell>
         <mxCell id="7XydENh4Q1GiZ4dxHjLW-114" value="PveDeckUI:onOpen()&#xa;{&#xa;    self.deckHeroInfo = pveStore 中预存的heroDeckInfo&#xa;    获取解锁英雄列表 =&gt; 刷新布阵界面英雄列表: &#xa;    if (解锁英雄 id == 服务器推送数据中的 id)&#xa;    {&#xa;        恢复上次上阵阵容 - 加载模型&#xa;        C_PveScene.SetDeckModel(modeId, heroId, ...)  &#xa;    }&#xa;    item = &#xa;    {&#xa;         Cell中设置并存储数据 &#xa;         maskActive -- 是否显示遮罩(处于选中状态)&#xa;    }&#xa;    恢复上次上阵阵容 - 执行加载模型的回调&#xa;    C_PveScene.LoadDeckModel()&#xa;    Cell 排序, 战力刷新, 设置保存按键状态&#xa;}&#xa;    " style="whiteSpace=wrap;align=left;verticalAlign=middle;fontStyle=1;strokeWidth=1;fillColor=#ffcc99;strokeColor=#36393d;" vertex="1" parent="1">
           <mxGeometry x="-3.75" y="487" width="382.5" height="274" as="geometry" />
         </mxCell>
         <mxCell id="7XydENh4Q1GiZ4dxHjLW-116" value="PveManager.PveToDeck&#xa;{&#xa;     清除NPC, 挂机主角停止移动&#xa;      PveCameraManager.PveToDeck&#xa;       {&#xa;            切换相机视角至布阵界面视角&#xa;       }&#xa;       isInDeck = true  布阵参与到 PveManager 的 Update 中&#xa;       ShowDeckBg() 显示PveDeckCanvas&#xa;       DeckManager.Init()&#xa;       {&#xa;            布阵初始化 - 生成地上的五个布阵点位&#xa;       }&#xa;}" style="whiteSpace=wrap;align=left;verticalAlign=middle;fontStyle=1;strokeWidth=1;fillColor=#cce5ff;strokeColor=#36393d;" vertex="1" parent="1">
-          <mxGeometry x="400" y="490.5" width="340" height="231" as="geometry" />
+          <mxGeometry x="413" y="490.5" width="340" height="231" as="geometry" />
         </mxCell>
         <mxCell id="7XydENh4Q1GiZ4dxHjLW-120" value="&lt;span style=&quot;font-size: 15px&quot;&gt;&lt;b&gt;点击英雄头像上阵/下阵&lt;/b&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="50" y="804.5" width="222.5" height="20" as="geometry" />
+          <mxGeometry x="10" y="806" width="222.5" height="20" as="geometry" />
         </mxCell>
         <mxCell id="7XydENh4Q1GiZ4dxHjLW-122" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontColor=#FF0000;" edge="1" parent="1" source="7XydENh4Q1GiZ4dxHjLW-123" target="7XydENh4Q1GiZ4dxHjLW-126">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="7XydENh4Q1GiZ4dxHjLW-123" value="PveDeckUICell:onClickHero&#xa;{&#xa;    发送点击事件&#xa;    self:emit(heroId, modelId, level)&#xa;}" style="whiteSpace=wrap;align=left;verticalAlign=middle;fontStyle=1;strokeWidth=1;fillColor=#FFFFCC" vertex="1" parent="1">
-          <mxGeometry x="12.5" y="841" width="255" height="80" as="geometry" />
+          <mxGeometry x="-7.5" y="841" width="255" height="80" as="geometry" />
         </mxCell>
         <mxCell id="7XydENh4Q1GiZ4dxHjLW-124" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#FF0000;" edge="1" parent="1" source="7XydENh4Q1GiZ4dxHjLW-125" target="7XydENh4Q1GiZ4dxHjLW-127">
           <mxGeometry relative="1" as="geometry" />
@@ -379,23 +379,35 @@
         <mxCell id="7XydENh4Q1GiZ4dxHjLW-128" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#FF0000;" edge="1" parent="1" source="7XydENh4Q1GiZ4dxHjLW-126" target="7XydENh4Q1GiZ4dxHjLW-125">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="7XydENh4Q1GiZ4dxHjLW-137" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#FF0000;" edge="1" parent="1" source="7XydENh4Q1GiZ4dxHjLW-126" target="7XydENh4Q1GiZ4dxHjLW-136">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="7XydENh4Q1GiZ4dxHjLW-126" value="PveDeckUI:onClickHero(config)&#xa;{&#xa;     if(config.maskActive)&#xa;    {&#xa;         如果当前选中了，设置为非选中&#xa;         当前选中英雄数 - 1, 战力减少&#xa;         C_PveScene.CancelDeckModel(heroId)&#xa;    }&#xa;    else&#xa;    {&#xa;         如果当前没选中&#xa;         当前选中英雄数 + 1 &#xa;         if (选中英雄数超出5) =&gt; 弹出提示返回&#xa;         else =&gt; &#xa;         {&#xa;               设置为选中&#xa;               当前选中英雄数 + 1, 战力增加 &#xa;               C_PveScene.SetDeckModel(modelId, level, heroId, config.sort)&#xa;               C_PveScene.LoadDeckModel()         &#xa;         }             &#xa;    }&#xa;}" style="whiteSpace=wrap;align=left;verticalAlign=middle;fontStyle=1;strokeWidth=1;fillColor=#ffcc99;strokeColor=#36393d;" vertex="1" parent="1">
-          <mxGeometry x="-90" y="960" width="460" height="358.5" as="geometry" />
+          <mxGeometry x="-110" y="960" width="460" height="358.5" as="geometry" />
         </mxCell>
         <mxCell id="7XydENh4Q1GiZ4dxHjLW-133" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#FF0000;" edge="1" parent="1" source="7XydENh4Q1GiZ4dxHjLW-127" target="7XydENh4Q1GiZ4dxHjLW-132">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="7XydENh4Q1GiZ4dxHjLW-127" value="DeckManager:SetDeckModel(int modelId, int level, int heroId, int sort = -1)&#xa;{&#xa;    获取模型的位置&#xa;    {&#xa;      	if(sort != -1) =&gt; 是服务器传来的数据 =&gt; nexPos = sort&#xa;        else =&gt; 不是服务器传来的数据 =&gt; nexPos = 遍历 hasDeckSpace 数组，找到下一个空位&#xa;    }&#xa;    heroToDeckPosDict[heroId] = nextPosIndex 存储英雄id和位置id的映射&#xa;    加载模型&#xa;    {&#xa;         renderer = PveResourceManager.GetResource(modelId)&#xa;         if(renderer == null)&#xa;         {&#xa;             该模型没有提前预加载，准备开始加载，在加载完成之前先显示loading特效 =&gt; 设置 loadingObj 的位置和动画&#xa;             List&lt;Action&gt; onAllModelLoaded.Add(()=&gt;&#xa;             {&#xa;                 此处为加载完成后执行的回调&#xa;                 renderer = PveResourceManager.GetResource(modelId)&#xa;                 renderer.transform.localPosition = loadingObj.transform.localPosition - modelOffset;&#xa;                 加载等级预制体 levelObj =&gt; levelObj.SetParent(renderer)&#xa;             })&#xa;             输入模型id，加载对应模型资源至资源字典&#xa;             PveResourceManager.Instance.LoadDeckHero(modelId)&#xa;         }&#xa;         else&#xa;         {&#xa;             该模型已经预加载，直接进行设置&#xa;         }&#xa;    }&#xa;}" style="whiteSpace=wrap;align=left;verticalAlign=middle;fontStyle=1;strokeWidth=1;fillColor=#cce5ff;strokeColor=#36393d;" vertex="1" parent="1">
-          <mxGeometry x="390" y="1180" width="730" height="460" as="geometry" />
+          <mxGeometry x="390" y="1169" width="730" height="460" as="geometry" />
         </mxCell>
         <mxCell id="7XydENh4Q1GiZ4dxHjLW-130" value="DeckManager:LoadDeckModel()&#xa;{&#xa;    将之前存在资源字典中的资源一起加载，并执行存储的回调&#xa;   	PveResourceManager.Instance.StartLoad(() =&gt;&#xa;    {&#xa;         foreach (var action in onAllModelLoaded)&#xa;         {   &#xa;             action?.Invoke();&#xa;         }&#xa;         onAllModelLoaded.Clear();&#xa;     });&#xa;}" style="whiteSpace=wrap;align=left;verticalAlign=middle;fontStyle=1;strokeWidth=1;fillColor=#cce5ff;strokeColor=#36393d;" vertex="1" parent="1">
-          <mxGeometry x="390" y="1740" width="730" height="190" as="geometry" />
+          <mxGeometry x="390" y="1730" width="730" height="190" as="geometry" />
         </mxCell>
         <mxCell id="7XydENh4Q1GiZ4dxHjLW-134" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#FF0000;" edge="1" parent="1" source="7XydENh4Q1GiZ4dxHjLW-132" target="7XydENh4Q1GiZ4dxHjLW-130">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="7XydENh4Q1GiZ4dxHjLW-132" value="C_PveScene.LoadDeckModel() " style="whiteSpace=wrap;align=left;verticalAlign=middle;fontStyle=1;strokeWidth=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="650" y="1660" width="210" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="7XydENh4Q1GiZ4dxHjLW-135" value="DeckManager:CancelDeckModel(int heroId)&#xa;{&#xa;   回收模型&#xa;   if(modelDict[heroId].GetComponent&lt;ModelDrag&gt;().isLoading == true)&#xa;   {&#xa;       模型正处于加载状态，回收的是加载预制体&#xa;   }&#xa;   else&#xa;   {&#xa;       模型已经加载完毕，回收的是模型和等级条预制体&#xa;   }&#xa;   字典删除对应等于 heroId 的 key&#xa;}" style="whiteSpace=wrap;align=left;verticalAlign=middle;fontStyle=1;strokeWidth=1;fillColor=#cce5ff;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="-90" y="1439" width="420" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="7XydENh4Q1GiZ4dxHjLW-138" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#FF0000;" edge="1" parent="1" source="7XydENh4Q1GiZ4dxHjLW-136" target="7XydENh4Q1GiZ4dxHjLW-135">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7XydENh4Q1GiZ4dxHjLW-136" value="C_PveSceneCancelDeckModel(heroId) " style="whiteSpace=wrap;align=left;verticalAlign=middle;fontStyle=1;strokeWidth=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="-2.5" y="1350" width="245" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
