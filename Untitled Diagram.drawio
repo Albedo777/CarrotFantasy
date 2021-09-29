@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-09-29T08:53:52.069Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36 Edg/94.0.992.31" etag="CXh-MLr88B8KB7Ng7_5w" version="15.3.7" type="github">
+<mxfile host="app.diagrams.net" modified="2021-09-29T09:39:50.379Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36 Edg/94.0.992.31" etag="C6PxhCFmfQOp2jRRgmVK" version="15.3.7" type="github">
   <diagram name="Page-1" id="c7558073-3199-34d8-9f00-42111426c3f3">
     <mxGraphModel dx="2248" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="826" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
@@ -408,6 +408,12 @@
         </mxCell>
         <mxCell id="7XydENh4Q1GiZ4dxHjLW-136" value="C_PveSceneCancelDeckModel(heroId) " style="whiteSpace=wrap;align=left;verticalAlign=middle;fontStyle=1;strokeWidth=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="-2.5" y="1350" width="245" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="7XydENh4Q1GiZ4dxHjLW-140" value="&lt;span style=&quot;font-size: 15px&quot;&gt;&lt;b&gt;拖动模型交换位置&lt;/b&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="13.75" y="1970" width="222.5" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="7XydENh4Q1GiZ4dxHjLW-146" value="DeckManager:Update()&#xa;{&#xa;    为了防止模型的遮挡&#xa;    if(当前有拖动目标) =&gt; 执行拖动目标的&lt;ModeDrag&gt;().OnUpdate()&#xa;    else&#xa;    {&#xa;        遍历 heroToDragDict 执行每个 modelDrag 脚本的 OnUpdate 方法&#xa;        直到其中一个模型被移动 =&gt;&#xa;        {&#xa;            curModelDrag = modelDrag&#xa;            isDragging = true&#xa;            break&#xa;        }&#xa;    }&#xa;}" style="whiteSpace=wrap;align=left;verticalAlign=middle;fontStyle=1;strokeWidth=1;fillColor=#ffcc99;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="-60" y="2010" width="382.5" height="274" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
