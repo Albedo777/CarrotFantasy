@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-09-29T08:43:54.353Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36 Edg/94.0.992.31" etag="eOGlNuhn4GdgJHVG6xbl" version="15.3.7" type="github">
+<mxfile host="app.diagrams.net" modified="2021-09-29T08:44:44.210Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36 Edg/94.0.992.31" etag="smaBG8pdc28XVioUQEDL" version="15.3.7" type="github">
   <diagram name="Page-1" id="c7558073-3199-34d8-9f00-42111426c3f3">
     <mxGraphModel dx="2248" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="826" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
@@ -361,7 +361,7 @@
         <mxCell id="7XydENh4Q1GiZ4dxHjLW-116" value="PveManager.PveToDeck&#xa;{&#xa;     清除NPC, 挂机主角停止移动&#xa;      PveCameraManager.PveToDeck&#xa;       {&#xa;            切换相机视角至布阵界面视角&#xa;       }&#xa;       isInDeck = true  布阵参与到 PveManager 的 Update 中&#xa;       ShowDeckBg() 显示PveDeckCanvas&#xa;       DeckManager.Init()&#xa;       {&#xa;            布阵初始化 - 生成地上的五个布阵点位&#xa;       }&#xa;}" style="whiteSpace=wrap;align=left;verticalAlign=middle;fontStyle=1;strokeWidth=1;fillColor=#cce5ff;strokeColor=#36393d;" vertex="1" parent="1">
           <mxGeometry x="400" y="490.5" width="340" height="231" as="geometry" />
         </mxCell>
-        <mxCell id="7XydENh4Q1GiZ4dxHjLW-120" value="&lt;span style=&quot;font-size: 15px&quot;&gt;&lt;b&gt;点击英雄头像上阵&lt;/b&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="7XydENh4Q1GiZ4dxHjLW-120" value="&lt;span style=&quot;font-size: 15px&quot;&gt;&lt;b&gt;点击英雄头像上阵/下阵&lt;/b&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="50" y="804.5" width="222.5" height="20" as="geometry" />
         </mxCell>
         <mxCell id="7XydENh4Q1GiZ4dxHjLW-122" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontColor=#FF0000;" edge="1" parent="1" source="7XydENh4Q1GiZ4dxHjLW-123" target="7XydENh4Q1GiZ4dxHjLW-126">
@@ -389,13 +389,13 @@
           <mxGeometry x="390" y="1180" width="730" height="460" as="geometry" />
         </mxCell>
         <mxCell id="7XydENh4Q1GiZ4dxHjLW-130" value="DeckManager:LoadDeckModel()&#xa;{&#xa;    将之前存在资源字典中的资源一起加载，并执行存储的回调&#xa;   	PveResourceManager.Instance.StartLoad(() =&gt;&#xa;    {&#xa;         foreach (var action in onAllModelLoaded)&#xa;         {   &#xa;             action?.Invoke();&#xa;         }&#xa;         onAllModelLoaded.Clear();&#xa;     });&#xa;}" style="whiteSpace=wrap;align=left;verticalAlign=middle;fontStyle=1;strokeWidth=1;fillColor=#cce5ff;strokeColor=#36393d;" vertex="1" parent="1">
-          <mxGeometry x="390" y="1770" width="730" height="190" as="geometry" />
+          <mxGeometry x="390" y="1740" width="730" height="190" as="geometry" />
         </mxCell>
         <mxCell id="7XydENh4Q1GiZ4dxHjLW-134" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#FF0000;" edge="1" parent="1" source="7XydENh4Q1GiZ4dxHjLW-132" target="7XydENh4Q1GiZ4dxHjLW-130">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="7XydENh4Q1GiZ4dxHjLW-132" value="C_PveScene.LoadDeckModel() " style="whiteSpace=wrap;align=left;verticalAlign=middle;fontStyle=1;strokeWidth=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="650" y="1680" width="210" height="50" as="geometry" />
+          <mxGeometry x="650" y="1660" width="210" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
